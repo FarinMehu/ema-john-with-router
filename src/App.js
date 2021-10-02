@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import Inventory from './components/Inventory/Inventory';
 import Notfound from './components/NotFound/Notfound';
 import OrderReview from './components/OrderReview/OrderReview';
+import Placeorder from './components/PlaceOrder/Placeorder';
 import Shop from './components/Shop/Shop';
 
 function App() {
@@ -23,6 +24,9 @@ function App() {
           </Route>
           <Route exact path='/inventory'>
             <Inventory></Inventory>
+          </Route>
+          <Route path='/placeorder'>
+            <Placeorder></Placeorder>
           </Route>
           <Route path='*'>
             <Notfound></Notfound>
